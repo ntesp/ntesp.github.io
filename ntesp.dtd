@@ -1,0 +1,14 @@
+<!ELEMENT app (executable,config,comment?)>
+<!ELEMENT executable EMPTY>
+<!ELEMENT config (ConfigItems,ConfigItem+)>
+<!ELEMENT ConfigItems (ConfigItem+)>
+<!ELEMENT ConfigItem (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>
+<!ATTLIST app namespace NMTOKEN #REQUIRED>
+<!ATTLIST executable filename NMTOKEN #REQUIRED>
+<!ATTLIST executable version NMTOKEN #IMPLIED>
+<!ATTLIST ConfigItems name NMTOKEN #REQUIRED>
+<!ATTLIST ConfigItem type NMTOKEN #IMPLIED>
+<!ATTLIST ConfigItem name NMTOKEN #REQUIRED>
+<!ENTITY copyright "Copyright © ntesp 2023 ~ ">
+<!ENTITY base "C:\ntesp">
