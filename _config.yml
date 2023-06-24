@@ -2,3 +2,10 @@ name: "Redirector"
 title: "Redirector"
 
 url: "https://ntesp.github.io"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+sitemap: true
